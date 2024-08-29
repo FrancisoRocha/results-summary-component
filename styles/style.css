@@ -1,0 +1,324 @@
+/* FUENTES */
+@font-face {
+    font-family: "Hanken-Var";
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Hanken-Bold";
+    src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+@font-face {
+    font-family: "Hanken-Extra";
+    src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Hanken-Medium";
+    src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+/* VARIBLES DE COLORES */
+:root {
+    /* COLORES PRIMARIOS */
+    --reaction: hsl(0, 100%, 67%);
+    --memory: hsl(39, 100%, 56%);
+    --verbal: hsl(166, 100%, 37%);
+    --visual: hsl(234, 85%, 45%);
+    /* GRADIENTES */
+    --gradient-uno: linear-gradient(
+        to bottom,
+        #7755ff 0%,
+        #6943ff 0%,
+        #2f2ce9 100%
+    );
+    --gradient-dos-circle: linear-gradient(
+        to bottom,
+        rgba(77, 33, 201, 1) 0%,
+        rgba(37, 33, 201, 0) 100%
+    );
+    /* COLORES NEUTRALES */
+    --fondo: #ecf2ff;
+    --texto-uno: #ffffff;
+    --texto-numbers: #303b59;
+    --texto-dos: #cac9ff;
+    --boton: #303b59;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--fondo);
+}
+/* CONTENEDOR DE LA CARD UNO */
+.container-card {
+    width: 76.3rem;
+    height: 51.2rem;
+    background-color: var(--texto-uno);
+    margin: 0 auto;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    border-radius: 3.2rem;
+}
+.card-one {
+    width: 36.8rem;
+    height: 51.2rem;
+    border-radius: 3.2rem;
+    background-image: var(--gradient-uno);
+}
+.texto__uno {
+    font-family: "Hanken-Bold";
+    font-size: 2.4rem;
+    padding-top: 5rem;
+    text-align: center;
+    color: var(--texto-dos);
+}
+/* CIRCULO */
+.circle__card {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-image: var(--gradient-dos-circle);
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.number__card{
+    font-size: 7.2rem;
+    font-family: "Hanken-Extra";
+    color: var(--texto-uno);
+    text-align: center;
+    padding-top: 4rem;
+}
+.text__dos {
+    font-family: "Hanken-Bold";
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--texto-uno);
+    padding-top: 3rem;
+}
+.text__number{
+    font-size: 1.8rem;
+    font-family: "Hanken-Bold";
+    color: var(--texto-dos);
+    text-align: center;
+    padding-top: 3rem;
+}
+.texto__tres {
+    width: 26rem;
+    height: 6.9rem;
+    font-family: "Hanken-Medium";
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    color: var(--texto-dos);
+    text-align: center;
+    margin: 0 auto;
+}
+.text__container{
+    font-family: "Hanken-Bold";
+    font-size: 2.4rem;
+    color: var(--boton);
+    margin-top: -46.5rem;
+    margin-left: 40rem;
+}
+/* CARD DOS*/
+.card__two{
+    width: 28.8rem;
+    height: 39.7rem;
+    margin-left: 42.5rem;
+    margin-top: 4rem;
+}
+.reaction{
+    width: 28.8rem;
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    background-color: #ff55551a;
+    border-radius: 1.2rem;
+}
+.reaction img{
+    margin-left: 1.8rem;
+}
+.text__reaction{
+    font-family: "Hanken-Medium";
+    font-size: 1.8rem;
+    color: var(--reaction);
+    margin-left: 1.7rem;
+}
+.text__card__two{
+    font-family: "Hanken-Bold";
+    color: var(--boton);
+    font-size: 1.8rem;
+    margin-left: 7.5rem;
+    
+}
+.one{
+    margin-left: 6rem;
+}
+.text__card__two span{
+    color: #303b5962;
+    margin-left: 1.3rem; 
+}
+/* MEMORIA */
+.memory{
+    width: 28.8rem;
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.2rem;
+    background-color: #ffb01e1a;
+    margin-top: 1rem;
+}
+.memory img{
+    margin-left: 1.8rem;
+}
+.text__memory{
+    font-family: "Hanken-Medium";
+    font-size: 1.8rem;
+    color: var(--memory);
+    margin-left: 1.7rem;
+}
+/* VERBAL */
+.verbal{
+    width: 28.8rem;
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.2rem;
+    background-color: #00bb8f19;
+    margin-top: 1rem;
+}
+.verbal img{
+    margin-left: 1.8rem;
+}
+.text__verbal{
+    font-family: "Hanken-Medium";
+    font-size: 1.8rem;
+    color: var(--verbal);
+    margin-left: 1.7rem;
+}
+/* VISULA */
+.visual{
+    width: 28.8rem;
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.2rem;
+    background-color: #1125d616;
+    margin-top: 1rem;
+}
+.visual img{
+    margin-left: 1.8rem;
+}
+.text__visual{
+    font-family: "Hanken-Medium";
+    font-size: 1.8rem;
+    color: var(--visual);
+    margin-left: 1.7rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+    height: 5.6rem;
+    border-radius: 12.8rem;
+    background-color: var(--boton);
+    color: var(--texto-uno);
+    font-size: 1.8rem;
+    font-family: "Hanken-Bold";
+    cursor: pointer;
+    margin-top: -10rem;
+    margin-left: 42rem;
+    border: none;
+}
+.btn:hover{
+    background-image: var(--gradient-uno);
+}
+
+@media(max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: var(--texto-uno);
+    }
+    .container-card{
+        width: 100%;
+        height: auto;
+    }
+    .card-one{
+        width: 100%;
+        height: 35.6rem;
+        border-radius: 0 0 3.2rem 3.2rem;
+        margin-top: -20rem;
+    }
+    .texto__uno{
+        font-size: 1.8rem;
+        padding-top: 2rem;
+    }
+    .circle__card{
+        width: 14rem;
+        height: 14rem;
+    }
+    .number__card{
+        padding-top: 2rem;
+        font-size: 5.6rem;
+    }
+    .text__number{
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+    .text__dos{
+        padding-top: 2rem;
+        font-size: 2.4rem;
+    }
+    .texto__tres{
+        padding-top: 2rem;
+        font-size: 1.6rem;
+        font-family: "Hanken-Medium";
+    }
+    /* CARD DOS*/
+    .text__container{
+        margin-top: 4rem;
+        margin-left: 3.2rem;
+        font-size: 2rem;
+    }
+    .card__two{
+        margin-left: 0;
+    }
+    .reaction,
+    .memory,
+    .verbal,
+    .visual{
+        width: 31.5rem;
+        height: 5.6rem;
+        margin-top: 2rem;
+        margin-left: 4.5rem;
+    
+    }
+    .text__reaction,
+    .text__memory,
+    .text__verbal,
+    .text__visual{
+        font-size: 1.6rem;
+        font-family: "Hanken-Var";
+        font-weight: 400;
+    }
+    .text__card__two{
+        font-size: 1.6rem;
+    }
+    .text__card__two span{
+        font-size: 1.6rem;
+    }
+    .btn{
+        width: 31.5rem;
+        height: 5.6rem;
+        margin-left: 4.5rem;
+        margin-top: -5rem;
+    }
+}
